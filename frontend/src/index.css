@@ -1,0 +1,123 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import "tailwindcss";
+
+/* Ensure proper mobile viewport */
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Better touch scrolling */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --primary: #2563eb;
+  --secondary: #1e293b;
+  --accent: #0ea5e9;
+  --light: #f8fafc;
+  --dark: #0f172a;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  
+  /* Background colors for light mode */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-card: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+}
+
+/* Dark mode variables */
+:root.dark {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --border-color: #475569;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-light: var(--light);
+  --color-dark: var(--dark);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  
+  /* Dynamic theme colors */
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-card: var(--bg-card);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border: var(--border-color);
+}
+
+@keyframes marquee {
+  0% { 
+    transform: translateX(100%); 
+  }
+  100% { 
+    transform: translateX(-100%); 
+  }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+
+@keyframes marquee-smooth {
+  0% { 
+    transform: translate3d(100%, 0, 0); 
+  }
+  100% { 
+    transform: translate3d(-100%, 0, 0); 
+  }
+}
+
+.animate-marquee-smooth {
+  animation: marquee-smooth 60s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+/* Pause animation on hover */
+.animate-marquee:hover,
+.animate-marquee-smooth:hover {
+  animation-play-state: paused;
+}
+
+/* For better performance on mobile */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-smooth {
+    animation: none;
+    transform: translateX(0);
+  }
+}
+
+/* Container styles to ensure proper overflow */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
