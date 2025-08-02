@@ -116,7 +116,3 @@ Events Models: `EarningEvent` and `AnalystAction` track upcoming earnings and an
 - **Sidebar**: Global navigation reflecting implemented features
 - **DashboardCard**: Generic card component handles loading, error, main metric, and optional details list
 - **OptionsSummary & IncomeSummary**: Detailed breakdown UIs for options and dividend projections
-
-## License
-
-[Your License Here]
