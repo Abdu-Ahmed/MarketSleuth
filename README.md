@@ -1,3 +1,5 @@
+![project-graph](DIAGRAM.png)
+
 # MarketSleuth
 
 A unified investor dashboard that aggregates traditional and alternative financial data into one seamless web application. MarketSleuth is my attempt and my case study of a modern full stack saas project, it provides real-time market data, insider trading filings, dividend and options income projections, sentiment analysis, custom stock scanners, earnings/events monitoring, a trade journal, alerts, user settings, and extensible data-source management.
@@ -116,3 +118,6 @@ Events Models: `EarningEvent` and `AnalystAction` track upcoming earnings and an
 - **Sidebar**: Global navigation reflecting implemented features
 - **DashboardCard**: Generic card component handles loading, error, main metric, and optional details list
 - **OptionsSummary & IncomeSummary**: Detailed breakdown UIs for options and dividend projections
+
+
+and i think thats all folks, thank you for taking the time to read this!
