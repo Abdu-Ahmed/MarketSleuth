@@ -4,6 +4,8 @@
 
 A unified investor dashboard that aggregates traditional and alternative financial data into one seamless web application. MarketSleuth is my attempt and my case study of a modern full stack saas project, it provides real-time market data, insider trading filings, dividend and options income projections, sentiment analysis, custom stock scanners, earnings/events monitoring, a trade journal, alerts, user settings, and extensible data-source management.
 
+you can take a look at the demo here: https://marketsleuth.wuaze.com/
+
 ## 🏗️ Architecture & Technology Stack
 
 | Layer | Technology |
